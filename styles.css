@@ -5,13 +5,17 @@ body {
 .card {
   border: none;
   border-radius: 12px;
-  transition: 0.3s;
+  transition:0.3s;
 }
 
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
 
 .btn {
   border-radius: 25px;}
+
+  .remove-toggle {
+    display: none;
+  }
+
+  .remove-toggle:checked + .card {
+    display: none;
+  }
